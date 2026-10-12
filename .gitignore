@@ -15,4 +15,21 @@ __pycache__/
 .DS_Store
 ~$*
 paper/*.docx
-!paper/RIVA_manuscript_formatted.docx
+# MELBA template files are not ours to redistribute; copy them from github.com/melba-journal/submission
+paper/melba/melba.cls
+paper/melba/logo.png
+paper/melba/orcid.png
+paper/melba/*.aux
+paper/melba/*.log
+paper/melba/*.bbl
+paper/melba/*.blg
+paper/melba/*.out
+paper/tmlr/*.aux
+paper/tmlr/*.log
+paper/tmlr/*.bbl
+paper/tmlr/*.blg
+paper/tmlr/*.out
+paper/*.pdf
+paper/elsevier/
+paper/tmlr/
+paper/melba/
