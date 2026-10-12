@@ -1,0 +1,15 @@
+# Dataset and anything derived from it (crops, embeddings, caches).
+# RIVA licence wording differs between sources (paper: CC BY-NC-ND 4.0; Zenodo: CC BY 4.0;
+# packaged file: CC BY-NC 4.0). Do NOT redistribute images or derived crops.
+data/
+out/
+*.npz
+*.npy
+
+# Environments
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

@@ -1,0 +1,64 @@
+patches: 959  four-reader: 386  single-reader: 573
+points: 26158
+single-reader patches per reader: annotator_1=143, annotator_2=137, annotator_3=144, annotator_4=149
+
+================ radius 1.5% of image size ================
+matched cells: 7779   merged groups: 18 (0.2%)
+readers per cell: 1: 3183 (41%), 2: 1302 (17%), 3: 1274 (16%), 4: 2020 (26%)
+Chao2 estimate of all cells: 10697  (unseen about 2918)
+share of cells marked by someone else that the reader also marked:
+  reader         all  lesion   INFL  other  dense  sparse
+  annotator_1    66%     43%    77%    77%    65%     66%
+  annotator_2    57%     55%    54%    60%    52%     63%
+  annotator_3    48%     26%    54%    63%    44%     53%
+  annotator_4    40%     18%    40%    59%    36%     44%
+cells skipped although at least two other readers marked them:
+  annotator_1:   374  {'non-lesion-called': 223, 'lesion-called': 151}
+  annotator_2:   792  {'non-lesion-called': 648, 'lesion-called': 144}
+  annotator_3:  1135  {'non-lesion-called': 647, 'lesion-called': 488}
+  annotator_4:  1577  {'non-lesion-called': 894, 'lesion-called': 683}
+
+================ radius 1.85% of image size ================
+matched cells: 7470   merged groups: 62 (0.8%)
+readers per cell: 1: 2817 (38%), 2: 1286 (17%), 3: 1239 (17%), 4: 2128 (28%)
+Chao2 estimate of all cells: 9784  (unseen about 2314)
+share of cells marked by someone else that the reader also marked:
+  reader         all  lesion   INFL  other  dense  sparse
+  annotator_1    69%     45%    81%    82%    68%     70%
+  annotator_2    60%     58%    56%    64%    54%     66%
+  annotator_3    51%     29%    57%    67%    46%     56%
+  annotator_4    41%     19%    42%    62%    37%     46%
+cells skipped although at least two other readers marked them:
+  annotator_1:   344  {'non-lesion-called': 196, 'lesion-called': 148}
+  annotator_2:   805  {'non-lesion-called': 659, 'lesion-called': 146}
+  annotator_3:  1040  {'non-lesion-called': 572, 'lesion-called': 468}
+  annotator_4:  1622  {'non-lesion-called': 923, 'lesion-called': 699}
+marks with no other-reader mark within 1.85% / between 1.85% and 4%:
+  annotator_1: 23% / 4%
+  annotator_2: 21% / 3%
+  annotator_3: 10% / 4%
+  annotator_4: 4% / 1%
+
+================ radius 2.0% of image size ================
+matched cells: 7392   merged groups: 80 (1.1%)
+readers per cell: 1: 2733 (37%), 2: 1273 (17%), 3: 1238 (17%), 4: 2148 (29%)
+Chao2 estimate of all cells: 9592  (unseen about 2200)
+share of cells marked by someone else that the reader also marked:
+  reader         all  lesion   INFL  other  dense  sparse
+  annotator_1    70%     45%    82%    82%    69%     71%
+  annotator_2    61%     59%    57%    65%    55%     66%
+  annotator_3    52%     29%    57%    68%    47%     57%
+  annotator_4    42%     19%    42%    63%    37%     46%
+cells skipped although at least two other readers marked them:
+  annotator_1:   343  {'non-lesion-called': 193, 'lesion-called': 150}
+  annotator_2:   799  {'non-lesion-called': 657, 'lesion-called': 142}
+  annotator_3:  1013  {'non-lesion-called': 552, 'lesion-called': 461}
+  annotator_4:  1629  {'non-lesion-called': 925, 'lesion-called': 704}
+
+================ image check (frozen ResNet18, 64 px crops, patch-grouped 5-fold) ================
+threshold = 10th percentile of consensus scores = 0.81
+median score: consensus 1.00, background 0.00; background above threshold 4%
+  annotator_1: solo marks 1174  share cell-like 57%
+  annotator_2: solo marks 1021  share cell-like 47%
+  annotator_3: solo marks  392  share cell-like 52%
+  annotator_4: solo marks  116  share cell-like 70%

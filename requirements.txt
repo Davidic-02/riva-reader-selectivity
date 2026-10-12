@@ -1,0 +1,8 @@
+numpy
+scipy
+scikit-learn
+pillow
+torch
+torchvision
+transformers   # only for --features dino
+matplotlib     # only for src/make_figures.py

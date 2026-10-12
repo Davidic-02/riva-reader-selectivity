@@ -1,0 +1,20 @@
+cells: 7470  lesion share 0.332  dense share 0.504
+converged: True  nll 16052.1
+
+P(reader marks a real cell): non-lesion/sparse | lesion/sparse | lesion/dense      P(spurious mark)
+  annotator_1: 0.97 | 0.93 | 0.90      0.305
+  annotator_2: 0.89 | 0.95 | 0.91      0.258
+  annotator_3: 0.89 | 0.85 | 0.78      0.125
+  annotator_4: 0.82 | 0.70 | 0.62      0.043
+
+solo marks and mean posterior probability that they are real cells:
+  annotator_1: 1254 solo marks, mean P(real) 0.02
+  annotator_2: 1045 solo marks, mean P(real) 0.01
+  annotator_3:  398 solo marks, mean P(real) 0.01
+  annotator_4:  120 solo marks, mean P(real) 0.03
+
+readers per cell: observed vs model-expected
+  1:  2817 vs  2815.1
+  2:  1286 vs  1198.4
+  3:  1239 vs  1439.8
+  4:  2128 vs  2016.7

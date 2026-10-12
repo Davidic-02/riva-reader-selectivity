@@ -1,0 +1,35 @@
+
+=== reference = marked by >=2 readers  (features: resnet18) ===
+method         all AUROC  all AP | les AUROC  les AP les rec@5%
+naive              0.863   0.821 |     0.874   0.616      0.422
+pu_const           0.857   0.818 |     0.862   0.590      0.397
+pu_reader          0.858   0.820 |     0.863   0.585      0.396
+pu_pred            0.861   0.821 |     0.877   0.634      0.443
+pu_true*           0.863   0.824 |     0.875   0.627      0.442
+oracle             0.875   0.837 |     0.885   0.652      0.484
+  pu_pred - naive (lesion):  AUROC +0.003 [-0.004,+0.011]   AP +0.019 [-0.003,+0.049]   rec@5% +0.024 [-0.007,+0.056]
+  pu_reader - naive (lesion):  AUROC -0.011 [-0.018,-0.003]   AP -0.030 [-0.049,-0.010]   rec@5% -0.026 [-0.051,+0.009]
+  pu_const - naive (lesion):  AUROC -0.012 [-0.017,-0.006]   AP -0.025 [-0.040,-0.009]   rec@5% -0.025 [-0.049,+0.002]
+
+=== reference = marked by >=3 readers  (features: resnet18) ===
+method         all AUROC  all AP | les AUROC  les AP les rec@5%
+naive              0.858   0.728 |     0.884   0.461      0.445
+pu_const           0.858   0.742 |     0.878   0.441      0.428
+pu_reader          0.860   0.746 |     0.876   0.434      0.416
+pu_pred            0.858   0.734 |     0.890   0.482      0.466
+pu_true*           0.863   0.741 |     0.889   0.474      0.454
+oracle             0.869   0.742 |     0.900   0.504      0.503
+  pu_pred - naive (lesion):  AUROC +0.006 [-0.001,+0.013]   AP +0.022 [-0.003,+0.058]   rec@5% +0.020 [-0.009,+0.057]
+  pu_reader - naive (lesion):  AUROC -0.008 [-0.016,+0.001]   AP -0.027 [-0.054,+0.002]   rec@5% -0.031 [-0.061,+0.005]
+  pu_const - naive (lesion):  AUROC -0.006 [-0.014,+0.002]   AP -0.020 [-0.043,+0.003]   rec@5% -0.018 [-0.044,+0.010]
+
+=== deferral (reference >=2 readers): disagreement-head corr = 0.761 ===
+signal                         0.5     0.6     0.7     0.8     0.9     1.0
+confidence                   0.091   0.118   0.146   0.173   0.201   0.227
+predicted disagreement       0.078   0.108   0.138   0.167   0.199   0.227
+both (mean rank)             0.076   0.103   0.134   0.167   0.197   0.227
+random                       0.229   0.227   0.228   0.227   0.227   0.227
+both minus confidence-only, error among accepted (negative = better):
+  coverage 0.5: -0.016 [-0.022, -0.011]
+  coverage 0.7: -0.012 [-0.016, -0.007]
+  coverage 0.9: -0.004 [-0.006, -0.002]
