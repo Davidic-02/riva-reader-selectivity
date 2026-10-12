@@ -1,6 +1,6 @@
 # Reader selectivity in multi-pathologist cervical cytology annotations (RIVA)
 
-Code and results for the manuscript *"Reader selectivity in multi-pathologist cervical cytology annotations: an analysis of RIVA and a negative result for reader-aware correction"* (David Adekoya; co-authors and affiliations to be added).
+Code and results for the manuscript *"Reader selectivity in multi-pathologist cervical cytology annotations: an analysis of RIVA and a negative result for reader-aware correction"
 
 RIVA is a public set of 959 conventional Pap-smear patches in which 386 patches were marked independently by four cytopathologists and 573 by one of the same four. This repository measures how those readers differ in which cells they mark, tests whether treating unmarked cells as unlabelled (a propensity-weighted positive-unlabelled correction) helps a detector trained on single-reader labels, and tests a reader-disagreement head as a deferral signal.
 
